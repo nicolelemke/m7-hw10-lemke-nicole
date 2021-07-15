@@ -10,7 +10,7 @@ var textarea = document.querySelector('textarea')
 
 //name
 
-var yourName = name.Span.textConent
+var yourName = nameSpan.textConent
 document.cookie = yourName
 
 //textarea
