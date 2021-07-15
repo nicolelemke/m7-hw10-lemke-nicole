@@ -13,7 +13,6 @@ var yourName = nameSpan.textConent
 document.cookie = yourName
 //textarea
 var textarea = localStorage.getItem('notes')
-
 textareaInput.textContent = textarea
 
 
@@ -30,12 +29,6 @@ formEl.onsubmit = function(e) {
   //textarea
   textarea = textareaInput.value
   localStorage.setItem('notes', textarea)
-
-
-
-  //textareaInput = textarea.value
-  //localStorage.setItem('notes', textareaInput)
-  //formEl.textConent = textareaInput
 
 
   // triggers thumbs up animation
