@@ -42,8 +42,6 @@ clear.onclick = function() {
   // Clear localstorage's content
   // YOUR CODE HERE
 
-  textarea.value = ""
-  localStorage.setItem("notes", "")
 
 
   // triggers thumbs up animation
