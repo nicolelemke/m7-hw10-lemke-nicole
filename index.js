@@ -8,12 +8,29 @@ var textarea = document.querySelector('textarea')
 // Then apply them to elements on the page
 // YOUR CODE HERE
 
+//name
+var yourName = nameSpan.textContent
+document.cookie = yourName
+
+//textarea
+var textareaInput = localStorage.getItem('notes')
+
+
+
 formEl.onsubmit = function(e) {
   // prevents form submission
   e.preventDefault()
   // save name element's content to cookies
   // save textarea's content to localstorage
   // YOUR CODE HERE
+  
+  //name
+  document.cookie = nameSpan.textContent
+
+  //textarea
+  textareaInput = textarea.value
+  localStorage.setItem('notes', textareaInput)
+
 
   // triggers thumbs up animation
   this.elements.save.classList.add('emoji')
@@ -23,6 +40,10 @@ clear.onclick = function() {
   // Clear textarea's value
   // Clear localstorage's content
   // YOUR CODE HERE
+
+  textarea.value = ""
+  localStorage.setItem("notes", "")
+
 
   // triggers thumbs up animation
   this.classList.add('emoji')
