@@ -10,7 +10,6 @@ var textarea = document.querySelector('textarea')
 
 //name
 var yourName = nameSpan.textContent
-document.cookie = yourName
 
 //textarea
 var textareaInput = localStorage.getItem('notes')
@@ -25,7 +24,6 @@ formEl.onsubmit = function(e) {
   // YOUR CODE HERE
   
   //name
-  document.cookie = nameSpan.textContent
 
   //textarea
   textareaInput = textarea.value
