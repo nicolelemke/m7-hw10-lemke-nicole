@@ -47,6 +47,7 @@ clear.onclick = function() {
   // Clear localstorage's content
   // YOUR CODE HERE
 
+  textareaInput.value = ""
   localStorage.clear();
 
 
