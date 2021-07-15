@@ -9,10 +9,8 @@ var textarea = document.querySelector('textarea')
 // YOUR CODE HERE
 
 //name
-
 var yourName = nameSpan.textConent
 document.cookie = yourName
-
 //textarea
 var textareaInput = localStorage.getItem('notes')
 
