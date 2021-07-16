@@ -8,8 +8,13 @@ var textareaInput = document.querySelector('textarea')
 // Then apply them to elements on the page
 // YOUR CODE HERE
 
+
 //name
- 
+var nameValue = document.cookie
+nameSpan.textContent = nameSpan.textContent
+
+
+
 //textarea
 var textarea = localStorage.getItem('notes')
 textareaInput.textContent = textarea
@@ -24,7 +29,7 @@ formEl.onsubmit = function(e) {
   // YOUR CODE HERE
   
   //name
-  
+  document.cookie = nameSpan.textContent
 
 
   //textarea
