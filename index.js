@@ -10,9 +10,8 @@ var textareaInput = document.querySelector('textarea')
 
 
 //name
-var nameValue = document.cookie
-nameSpan.textContent = nameSpan.textContent
-
+var nameValue = document.cookie.split('=')
+nameSpan.textContent = nameValue[0]
 
 
 //textarea
