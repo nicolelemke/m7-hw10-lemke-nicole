@@ -10,9 +10,6 @@ var textareaInput = document.querySelector('textarea')
 
 
 //name
-//var nameValue = document.cookie.split('=')
-//ameSpan.textContent = nameValue[0]
-
 var nameValue = document.cookie || 'name=Your Name'
 nameSpan.textContent = nameValue
   .split('=')[1]
@@ -32,10 +29,7 @@ formEl.onsubmit = function(e) {
   // YOUR CODE HERE
   
   //name
-  //document.cookie = nameSpan.textContent
-
   document.cookie = 'name=' + nameSpan.textContent
-  //nameSpan.textContent = nameValue
 
 
   //textarea
